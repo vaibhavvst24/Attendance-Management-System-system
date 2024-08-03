@@ -1,0 +1,169 @@
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 46
+Server version: 8.0.34 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| attendance_db      |
+| dumb               |
+| fish               |
+| information_schema |
+| mysql              |
+| new                |
+| new_schema         |
+| performance_schema |
+| python             |
+| sys                |
++--------------------+
+10 rows in set (0.01 sec)
+
+mysql> use attendance_db;
+Database changed
+mysql> show tables;
++-------------------------+
+| Tables_in_attendance_db |
++-------------------------+
+| attendance              |
+| students                |
+| users                   |
++-------------------------+
+3 rows in set (0.03 sec)
+
+mysql> select * from users;
++---------+----------+------------+
+| user_id | username | password   |
++---------+----------+------------+
+|       1 | vaibhav  | vaibhav123 |
+|       3 | 3        |            |
+|       4 | vai      | vai123     |
++---------+----------+------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from attendance;
++-----------+------------+------------+---------+
+| record_id | student_id | date       | status  |
++-----------+------------+------------+---------+
+|         1 |          1 | 2024-07-01 | Present |
+|         2 |          2 | 2024-07-01 | Absent  |
+|         3 |          3 | 2024-07-01 | Present |
+|         4 |          4 | 2024-07-01 | Present |
+|         5 |          1 | 2024-07-02 | Absent  |
+|         6 |          2 | 2024-07-02 | Present |
+|         7 |          3 | 2024-07-02 | Present |
+|         8 |          4 | 2024-07-01 | Absent  |
+|         9 |          1 | 2024-07-03 | Present |
+|        10 |          2 | 2024-07-03 | Present |
+|        11 |          3 | 2024-07-03 | Absent  |
+|        12 |          4 | 2024-07-03 | Present |
+|        13 |          1 | 2024-07-04 | Absent  |
+|        14 |          2 | 2024-07-04 | Absent  |
+|        15 |          3 | 2024-07-04 | Present |
+|        16 |          4 | 2024-07-04 | Present |
+|        17 |          1 | 2024-07-01 | Present |
+|        18 |          2 | 2024-07-01 | Absent  |
+|        19 |          3 | 2024-07-01 | Present |
+|        20 |          4 | 2024-07-01 | Present |
+|        21 |          1 | 2024-07-02 | Absent  |
+|        22 |          2 | 2024-07-02 | Present |
+|        23 |          3 | 2024-07-02 | Present |
+|        24 |          4 | 2024-07-01 | Absent  |
+|        25 |          1 | 2024-07-03 | Present |
+|        26 |          2 | 2024-07-03 | Present |
+|        27 |          3 | 2024-07-03 | Absent  |
+|        28 |          4 | 2024-07-03 | Present |
+|        29 |          1 | 2024-07-04 | Absent  |
+|        30 |          2 | 2024-07-04 | Absent  |
+|        31 |          3 | 2024-07-04 | Present |
+|        32 |          4 | 2024-07-04 | Present |
+|        33 |          1 | 2024-07-01 | Present |
+|        34 |          2 | 2024-07-01 | Absent  |
+|        35 |          3 | 2024-07-01 | Present |
+|        36 |          4 | 2024-07-01 | Present |
+|        37 |          1 | 2024-07-02 | Absent  |
+|        38 |          2 | 2024-07-02 | Present |
+|        39 |          3 | 2024-07-02 | Present |
+|        40 |          4 | 2024-07-01 | Absent  |
+|        41 |          1 | 2024-07-03 | Present |
+|        42 |          2 | 2024-07-03 | Present |
+|        43 |          3 | 2024-07-03 | Absent  |
+|        44 |          4 | 2024-07-03 | Present |
+|        45 |          1 | 2024-07-04 | Absent  |
+|        46 |          2 | 2024-07-04 | Absent  |
+|        47 |          3 | 2024-07-04 | Present |
+|        48 |          4 | 2024-07-04 | Present |
+|        49 |          1 | 2024-07-01 | Present |
+|        50 |          2 | 2024-07-01 | Absent  |
+|        51 |          3 | 2024-07-01 | Present |
+|        52 |          4 | 2024-07-01 | Present |
+|        53 |          1 | 2024-07-02 | Absent  |
+|        54 |          2 | 2024-07-02 | Present |
+|        55 |          3 | 2024-07-02 | Present |
+|        56 |          4 | 2024-07-01 | Absent  |
+|        57 |          1 | 2024-07-03 | Present |
+|        58 |          2 | 2024-07-03 | Present |
+|        59 |          3 | 2024-07-03 | Absent  |
+|        60 |          4 | 2024-07-03 | Present |
+|        61 |          1 | 2024-07-04 | Absent  |
+|        62 |          2 | 2024-07-04 | Absent  |
+|        63 |          3 | 2024-07-04 | Present |
+|        64 |          4 | 2024-07-04 | Present |
+|        65 |          1 | 2024-07-01 | Present |
+|        66 |          2 | 2024-07-01 | Absent  |
+|        67 |          3 | 2024-07-01 | Present |
+|        68 |          4 | 2024-07-01 | Present |
+|        69 |          1 | 2024-07-02 | Absent  |
+|        70 |          2 | 2024-07-02 | Present |
+|        71 |          3 | 2024-07-02 | Present |
+|        72 |          4 | 2024-07-01 | Absent  |
+|        73 |          1 | 2024-07-03 | Present |
+|        74 |          2 | 2024-07-03 | Present |
+|        75 |          3 | 2024-07-03 | Absent  |
+|        76 |          4 | 2024-07-03 | Present |
+|        77 |          1 | 2024-07-04 | Absent  |
+|        78 |          2 | 2024-07-04 | Absent  |
+|        79 |          3 | 2024-07-04 | Present |
+|        80 |          4 | 2024-07-04 | Present |
+|        81 |          1 | 2024-07-01 | Present |
+|        82 |          2 | 2024-07-01 | Absent  |
+|        83 |          3 | 2024-07-01 | Present |
+|        84 |          4 | 2024-07-01 | Present |
+|        85 |          1 | 2024-07-02 | Absent  |
+|        86 |          2 | 2024-07-02 | Present |
+|        87 |          3 | 2024-07-02 | Present |
+|        88 |          4 | 2024-07-01 | Absent  |
+|        89 |          1 | 2024-07-03 | Present |
+|        90 |          2 | 2024-07-03 | Present |
+|        91 |          3 | 2024-07-03 | Absent  |
+|        92 |          4 | 2024-07-03 | Present |
+|        93 |          1 | 2024-07-04 | Absent  |
+|        94 |          2 | 2024-07-04 | Absent  |
+|        95 |          3 | 2024-07-04 | Present |
+|        96 |          4 | 2024-07-04 | Present |
+|        97 |          5 | 2024-07-31 | Present |
++-----------+------------+------------+---------+
+97 rows in set (0.00 sec)
+
+mysql> select * from students;
++------------+---------+
+| student_id | name    |
++------------+---------+
+|          1 | vaibhav |
+|          2 | akshat  |
+|          3 | tanishq |
+|          4 | aman    |
+|          5 | lucky   |
++------------+---------+
+5 rows in set (0.00 sec)
+
+mysql>
